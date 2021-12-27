@@ -1,0 +1,3 @@
+.button {
+  @apply font-bold relative px-4 py-2 rounded-lg cursor-pointer border antialiased transition-all duration-300 ease-in-out;
+}

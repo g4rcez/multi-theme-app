@@ -1,0 +1,26 @@
+.input-container {
+  @apply relative;
+}
+.input-close-icon,
+.input-eye-open-icon,
+.input-eye-close-icon {
+  @apply hidden;
+}
+.input-eyes-icon {
+  @apply select-none pointer-events-none;
+}
+.input-underline {
+  @apply hidden;
+}
+.input-icons {
+  @apply flex gap-x-1 flex-row absolute bottom-2 right-1.5;
+}
+.input[data-password="close"] ~ .input-icons > .input-eyes-icon > .input-eye-open-icon {
+  @apply block;
+}
+.input[data-password="open"] ~ .input-icons > .input-eyes-icon > .input-eye-close-icon {
+  @apply block;
+}
+.input[data-close="true"] ~ .input-icons > .input-close-icon {
+  @apply block;
+}
