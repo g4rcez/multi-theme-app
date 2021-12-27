@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../components/button/button.css";
+@import "../components/input/input.css";
+
+html,
+body,
+#root {
+  @apply min-h-screen bg-surface text-typography;
+}
+
+label {
+  @apply cursor-text;
+}
+
+input {
+  @apply bg-transparent;
+}
+
+* {
+  @apply outline-main outline-1 outline-offset-1;
+}

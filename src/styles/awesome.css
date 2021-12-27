@@ -1,0 +1,32 @@
+@tailwind components;
+@tailwind base;
+@tailwind variants;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply bg-main text-surface-on-main hocus:bg-main-300 border-main;
+  }
+  .input-container {
+    @apply h-14;
+  }
+  .input-label {
+    @apply text-typography transition-all duration-300 ease-out cursor-text whitespace-nowrap;
+    transform: translate(5px, 27px) scale(1);
+  }
+  .input-label > label {
+    @apply w-full block;
+  }
+  .input {
+    @apply w-full border border-slate-400 rounded-lg p-1 outline-none hocus:border-main;
+    @apply absolute bottom-0 left-0 placeholder:text-transparent;
+  }
+  .input:not(:placeholder-shown) + .input-label,
+  .input:focus + .input-label {
+    @apply text-main;
+    transform: translate(-35px, -2.5px) scale(0.75);
+  }
+  .input:not(:placeholder-shown) {
+    @apply border-main;
+  }
+}

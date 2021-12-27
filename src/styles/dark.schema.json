@@ -1,0 +1,18 @@
+{
+    "main": {
+        "DEFAULT": "#9785D2",
+        "100": "#d5ceed",
+        "200": "#b6a9df",
+        "300": "#695d93",
+        "400": "#4b4269"
+    },
+    "typography": {
+        "DEFAULT": "#dddddd",
+        "sub": "#c6c6c6"
+    },
+    "surface": {
+        "DEFAULT": "#242424",
+        "on-main": "#eeeeee",
+        "on-top": "#303030"
+    }
+}
