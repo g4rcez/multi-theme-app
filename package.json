@@ -20,6 +20,7 @@
     "css:cool": "tailwindcss -c ./tailwind-components.config.js -i ./src/styles/cool.css -o ./public/css/cool.dist.css --watch",
     "css:themes": "concurrently 'yarn css:cool' 'yarn css:awesome'",
     "start": "react-scripts start",
+    "dev": "concurrently 'yarn css:awesome' 'yarn css:cool' 'yarn css:core' 'yarn start'",
     "build": "concurrently 'yarn css:build:awesome' 'yarn css:build:cool'&& yarn css:build:core && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
